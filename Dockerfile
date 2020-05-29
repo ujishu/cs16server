@@ -32,12 +32,12 @@ WORKDIR /home/steam/cs16
 
 # Add metamod
 RUN mkdir -p cstrike/addons/metamod/dlls
-COPY metamod_i386.so cstrike/addons/metamod/dlls/
-COPY metamod.so cstrike/addons/metamod/dlls/
+#COPY metamod_i386.so cstrike/addons/metamod/dlls/
+#COPY metamod.so cstrike/addons/metamod/dlls/
 
 # Add bots
-COPY podbot cstrike/addons/podbot
-RUN echo "linux addons/podbot/podbot_mm_i386.so" > cstrike/addons/metamod/plugins.ini
+#COPY podbot cstrike/addons/podbot
+#RUN echo "linux addons/podbot/podbot_mm_i386.so" > cstrike/addons/metamod/plugins.ini
 #COPY liblist.gam cstrike/
 
 # Copy ESL configs
